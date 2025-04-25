@@ -1,6 +1,7 @@
 html, body {
     margin: 0;
     padding: 0;
+    width: 100%;
     
     box-sizing: border-box;
 
@@ -101,8 +102,8 @@ body {
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 .logo{
-    height: auto;  /* Mantém proporção */
-   max-width: 170px; /* Controla o tamanho máximo */
+    height: auto; 
+   max-width: 170px;
    display: inline-flex;
 
 }
@@ -121,4 +122,214 @@ table th, table td{
     color: white;
     background-color: #1B3409;
     padding: 0.2%;
+}
+
+.header-content {
+    text-align: center;
+    padding: 20px 0;
+    width: 100%;
+}
+
+.header-content h1 {
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 5px;
+}
+
+.slogan {
+    color: #EBF7E3;
+    font-style: italic;
+}
+
+/* CONTENT */
+.contact-container {
+    display: flex;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.contact-section, .form-section {
+    flex: 1;
+    min-width: 1024px;
+}
+
+.contact-info {
+    background: #f8f8f8;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border-left: 4px solid #2c7873;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+    padding: 5px 0;
+    border-bottom: 1px dashed #ddd;
+}
+
+.contact-info p:last-child {
+    border-bottom: none;
+}
+
+.whatsapp-link {
+    color: #25D366;
+    font-weight: bold;
+}
+
+.map-container {
+    height: 250px;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* FORM */
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: 'Arial', sans-serif;
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2c7873;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-end;
+}
+
+/* FOOTER */
+.footer-content {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ADICIONE ESTAS REGRAS AO SEU CSS EXISTENTE */
+
+/* FORMULÁRIO ESTILIZADO */
+.contact-form {
+    background: white;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin-top: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #1B3409;
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #2c7873;
+    outline: none;
+}
+
+.form-group textarea {
+    height: 120px;
+    resize: vertical;
+}
+
+/* BOTÕES ESTILIZADOS */
+.form-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: all 0.3s;
+}
+
+.btn-submit {
+    background-color: #2c7873;
+    color: white;
+}
+
+.btn-submit:hover {
+    background-color: #1B3409;
+    transform: translateY(-2px);
+}
+
+.btn-reset {
+    background-color: #f1f1f1;
+    color: #333;
+}
+
+.btn-reset:hover {
+    background-color: #ddd;
+    transform: translateY(-2px);
+}
+
+/* IFRAME DO MAPA */
+.map-container {
+    height: 300px;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin: 20px 0;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    border: 1px solid #ddd;
+}
+
+.map-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+.main {
+    width: 90%;
+}
+
+.content {
+    padding: 30px;
+}
+.table-container {
+    min-height: 1024px; 
 }
